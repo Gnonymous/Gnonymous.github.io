@@ -5,4 +5,4 @@ permalink: /about/
 ---
 
 Gnonymous  
-—— 一个努力活着的人
+一个努力活着的人
