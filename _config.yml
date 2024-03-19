@@ -111,6 +111,8 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate
 
+markdown: kramdown
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile
