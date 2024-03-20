@@ -46,45 +46,41 @@ author: Gnonymous
 
 * **<span id="inter-ICL">inter-ICL：</span>**
 
-  * ICL：得益于VAG模块构造的不同view：细看DVG的构造，**v1和v2是一对一的**，inter-ICL的contrast是通过**键q值k对（v1-v2）**对应来对比学习的，也就是<u>***single  image的不同view对比（拉近）+硬样本对比（拉远）***</u>。这样只最大化了single image不同view的不变性（而不是同类目的不变性），在拉进single image views的距离的同时，同类目下不同image间仍保持一定距离——**保持了各类目（F/R）的方差**，保证了可迁移性（提高泛化）。
+  * ICL：得益于VAG模块构造的不同view：细看DVG的构造，**v1和v2是一对一的**，inter-ICL的contrast是通过**键q值k对（v1-v2）**对应来对比学习的，也就是<u>**single  image的不同view对比（拉近）+硬样本对比（拉远）**</u>。这样只最大化了single image不同view的不变性（而不是同类目的不变性），在拉进single image views的距离的同时，同类目下不同image间仍保持一定距离——**保持了各类目（F/R）的方差**，保证了可迁移性（提高泛化）。
 
     可视化参见[Feature distribution](#Feature distribution)
 
-  ![image-20240320225624510](https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_inter-ICL.png)
+    <div align=center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_inter-ICL.png"</div>
 
   * hard sample select ：维持一个R/F 的特征队列，挑选那些最像real的fake、最像fake的real入列（设定阈值）。作为hard sample进行CL。
 
-    ![image-20240320221359188](https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_hardsample1.png)
-
-    
+    <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_hardsample1.png"</center>
 
 * **intra-ICL：**
 
   * **Fake**：首先将fake img进行像素级分割——（**依据fake与对应real的差距生成的feature_mask,切割分为real_pixel and fake_pixel)**。L<sup>f</sup><sub> intra</sub> 依旧使用InfoNCE将真假pixel分开。
 
-    ![image-20240321003517363](https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/intra_fake_loss.png)
+    <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/intra_fake_loss.png"</center>
 
   * **Real：**因为都为real pixel，希望保持self-similarity，采取前人做法（**转置**）：
 
-    ![image-20240321003733394](https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/intra_real.png)
+    <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/intra_real.png"</center>
 
 * **Loss：**
 
   分为3个部分：cls+inter+intra
 
-  ![image-20240321003900053](https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_loss.png)
+  <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_loss.png"
 
 #### Expriment：
 
 * Cross-dataset evaluation:
 
-  ![image-20240321004149830](https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_cross.png)
+  <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_cross.png">
 
 * <span id ="Feature distribution">Feature distribution:</span>
 
-  ![image-20240321004244370](https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_feature%20distribution.png)
-
-
+  <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_feature%20distribution.png">
 
 
 
