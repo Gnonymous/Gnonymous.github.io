@@ -22,7 +22,7 @@ author: Gnonymous
 ​	**QAQ：**
 
 1. inter-ICL除了硬样本选择和之前的CL工作类似，主要还是添加了intra-ICL，这里大概是泛化提点的主要原因，而且DCL框架搭的很好，两个一组合故事能讲的蛮漂亮（有逻辑）。后面的`CADDM`也是在玩这方面的工作，似乎从`SBI`切进去的。
-2. New pipeline：设计一个framwork关注挖掘特定feature，在original的数据集的基础上专项处理Input进framework训练，提升训练效果，`SBi`、`CADDM`的处理思路一致，是一种启示。
+2. New pipeline：设计一个framwork关注挖掘特定feature，在original的数据集的基础上专项处理Input进framework训练，提升训练效果，`SBI` 、`CADDM`的处理思路一致，是一种启示。
 
 #### Novelty：
 
@@ -35,6 +35,8 @@ author: Gnonymous
 **Framework**：
 
 ![image-20240320113404337](https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_framwork.png)
+
+​	DVG模块生成增强数据，随机打乱混合输入2个流（带label，有监督的CL），双流Decoder share weight（参考MoCo MAE更新权重）
 
 **DAG：**
 
