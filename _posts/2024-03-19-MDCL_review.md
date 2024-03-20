@@ -20,7 +20,7 @@ author: Gnonymous
 - **Address：**提出了一种新的人脸伪造检测框架，命名为`Dual Contrastive Learning`。具体来说，结合**硬样本选择策略**(hard sample select)，首先提出了**实例间对比学习**`( Inter-Instance Contrastive Learning，Inter-ICL )`，通过特别构建实例对来促进任务相关的判别性特征学习。此外，为了进一步探索本质差异，引入**实例内对比学习**`( Intra-Instance Contrastive Learning，Intra-ICL )`，通过在实例内部构建局部区域对来关注伪造人脸中普遍存在的**局部内容不一致性**。
 
 - **QAQ：**
-  - inter-ICL除了硬样本选择和之前的CL工作类似，主要还是添加了intra-ICL，这里大概是泛化提点的主要原因，而且DCL框架搭的很好，两个一组合故事能讲的蛮漂亮（有逻辑）。后面的`CADDM`也是在玩这方面的工作，似乎从`SBI`切进去的。
+  - ~~inter-ICL除了硬样本选择和之前的CL工作类似，主要还是添加了intra-ICL，这里大概是泛化提点的主要原因~~，而且DCL框架搭的很好，两个一组合故事能讲的蛮漂亮（有逻辑）。后面的`CADDM`也是在玩这方面的工作，似乎从`SBI`切进去的。
   
     > 这里把DCL的对比框架想简单了，QK查询键值对的对比思路使得在inter-ICL中也提高了泛化性，具体见[section: inter-ICL](#inter-ICL)
   
@@ -37,7 +37,7 @@ author: Gnonymous
 * **Framework**：
   ![image-20240320113404337](https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_framwork.png)
 
-  DVG模块生成增强数据，views随机打乱混合输入2个流（带label，有监督的CL），双流Decoder share weight（参考MoCo MAE更新权重)，在f<sub>q</sub>后面外接全连接层output_2分类（L<sub>ce</sub> ）。`inter_ICL `的维持hard R/F队列，进行CL（L<sub>inter</sub>）；`intra_ICL`
+  DVG模块生成增强数据，views随机打乱混合输入2个流（带label，有监督的CL），双流Decoder share weight（参考MoCo MAE更新权重)，在f<sub>q</sub>后面外接全连接层output_2分类（L<sub>ce</sub> ）。`inter_ICL `的维持hard R/F队列，进行“查询”CL（L<sub>inter</sub>）；`intra_ICL`在pixel level上做CL，通过对比特征内的self-similarity来利用伪造人脸的不一致性。
 
 * **DVG：**
 
