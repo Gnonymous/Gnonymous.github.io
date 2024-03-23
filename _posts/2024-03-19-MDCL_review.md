@@ -7,8 +7,6 @@ comments: true
 author: Gnonymous
 ---
 
-### DCL：
-
 ![image-20240320104635957](https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/image-20240320104635957.png)
 
 >K. Sun, T. Yao, S. Chen, S. Ding, J. Li和R. Ji, 《Dual Contrastive Learning for General Face Forgery Detection》, *AAAI*, 卷 36, 期 2, 页 2316–2324, 6月 2022, doi: [10.1609/aaai.v36i2.20130](https://doi.org/10.1609/aaai.v36i2.20130).
@@ -74,11 +72,11 @@ author: Gnonymous
 
 #### Expriment：
 
-* Cross-dataset evaluation:
+* **Cross-dataset evaluation:**
 
   <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_cross.png">
 
-* <span id ="Feature distribution">Feature distribution:</span>
+* **<span id ="Feature distribution">Feature distribution:</span>**
 
   <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/DCL_feature%20distribution.png">
 
