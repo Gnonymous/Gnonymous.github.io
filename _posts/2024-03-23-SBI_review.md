@@ -27,7 +27,7 @@ author: Gnonymous
 
        > 更能帮助学习提高泛化性的 伪造痕迹——>让模型学习到
 
-       <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/SBI_artifacts.png">
+       <center><img src="/images/SBI_artifacts.png">
 
        ​		
 
@@ -35,7 +35,7 @@ author: Gnonymous
 
   2. 以往的方法融合两个不同的面孔，并根据选择的源图像和目标图像之间的差距生成伪影。相比之下，我们的方法仅从单张图像中混合了轻微变化的面孔，并通过变换主动生成伪影。
 
-     <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/SBI_efficient.png">
+     <center><img src="/images/SBI_efficient.png">
 
 * **QAQ:**
   * 总得来说，就是生成具有**更明确伪造痕迹的训练集**，训练模型**更关注这些Atifacts**，从而提升鲁棒性。Self-Blend里的这个`Self`很有创意（因为只用real进行处理训练），paper写的也很好，nice~
@@ -49,7 +49,7 @@ author: Gnonymous
 
 * **Framework:**
 
-<center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/SBI_framwork.png"></center>
+<center><img src="/images/SBI_framwork.png"></center>
 
 
 ~~~python
@@ -162,6 +162,6 @@ ISB = Is ⊙ M + It ⊙ (1 − M)
 
 * **Cross-Test:**
 
-  <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/SBI_test.png">
+  <center><img src="/master/images/SBI_test.png">
 
 [1]: https://openaccess.thecvf.com/content/ICCV2021/html/Zhao_Learning_Self-Consistency_for_Deepfake_Detection_ICCV_2021_paper.html "Zhao, Xiang Xu, Mingze Xu, Hui Ding, Yuanjun Xiong, and Wei Xia. Learning self-consistency for deepfake detection. In ICCV, pages 15023–15033, 2021. 1, 2, 3, 4, 5, 6"
