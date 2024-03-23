@@ -29,8 +29,6 @@ author: Gnonymous
 
        <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/SBI_artifacts.png">
 
-       ​		
-
      * 通过将源图像和目标图像与掩模进行混合，得到了SBI。SBI的训练鼓励模型学习通用表示，因为模型学习我们在[STG](#STG)中主动生成的伪造痕迹。
 
   2. 以往的方法融合两个不同的面孔，并根据选择的源图像和目标图像之间的差距生成伪影。相比之下，我们的方法仅从单张图像中混合了轻微变化的面孔，并通过变换主动生成伪影。
