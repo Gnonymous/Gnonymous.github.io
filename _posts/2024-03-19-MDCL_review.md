@@ -46,7 +46,7 @@ author: Gnonymous
 
 * **<span id="inter-ICL">inter-ICL：</span>**
 
-  * ICL：得益于VAG模块构造的不同view：细看DVG的构造，**v1和v2是一对一的**，inter-ICL的contrast是通过**键q值k对（v1-v2）**对应来对比学习的，也就是**<u>single  image的不同view对比（拉近）+硬样本对比（拉远）</u>**。这样只最大化了single image不同view的不变性（而不是同类目的不变性），在拉进single image views的距离的同时，同类目下不同image间仍保持一定距离——**保持了各类目（F/R）的方差**，保证了可迁移性（提高泛化）。
+  * ICL：得益于VAG模块构造的不同view：细看DVG的构造，**v1和v2是一对一的**，inter-ICL的contrast是通过**键q值k对（v1-v2）**对应来对比学习的，也就是**<u>single  image的不同view对比（拉近）+硬样本对比（拉远）</u>**。这样只最大化了single image不同view的不变性（而不是同类目的不变性），在拉近single image views的距离的同时，同类目下不同image间仍保持一定距离——**保持了各类目（F/R）的方差**，保证了可迁移性（提高泛化）。
 
     可视化参见[Feature distribution](#Feature distribution)
 
