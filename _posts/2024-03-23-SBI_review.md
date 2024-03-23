@@ -15,9 +15,10 @@ author: Gnonymous
 #### <span id="Motivation">Motivation:</span>
 
 * **Background:**
+  
   1. 目前大多模型在未知伪造方法的测试集上泛化效果不佳。
   2. 该问题最有效的解决方案之一是使用合成数据训练模型，这鼓励模型学习通用的表示来进行深度伪造检测。而目前大多方法处理此步骤时开销太大（需要先landmark matching后再blend）。
-
+  
 * **Address:**
 
   1. 提出了一种新的合成训练数据，称为**自混合图像( SBIs )**来检测深度伪造。SBI完全由**真实的单张图片（自己和自己blend）**混合生成，再现了常见的Artifacts(例如：混合边界和统计不一致性)。SBIs的核心思想是，*更一般和难以识别的伪造样本鼓励分类器学习通用和稳健的表示，而不会过度拟合操纵特定的伪造。*
@@ -48,7 +49,8 @@ author: Gnonymous
 
 * **Framework:**
 
-<center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/SBI_framwork.png">
+<center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/SBI_framwork.png"></center>
+
 
 ~~~python
 # 算法 1: SBIs 生成伪代码
