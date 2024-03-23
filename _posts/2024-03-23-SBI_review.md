@@ -9,7 +9,7 @@ author: Gnonymous
 
 <center><img  src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/SBI.png">
 
->[1]K. Shiohara和T. Yamasaki, 《Detecting Deepfakes with Self-Blended Images》, 收入 *2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, New Orleans, LA, USA: IEEE, 6月 2022, 页 18699–18708. doi: [10.1109/CVPR52688.2022.01816](https://doi.org/10.1109/CVPR52688.2022.01816).
+>K. Shiohara和T. Yamasaki, 《Detecting Deepfakes with Self-Blended Images》, 收入 *2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, New Orleans, LA, USA: IEEE, 6月 2022, 页 18699–18708. doi: [10.1109/CVPR52688.2022.01816](https://doi.org/10.1109/CVPR52688.2022.01816).
 
 #### <span id="Motivation">Motivation:</span>
 
