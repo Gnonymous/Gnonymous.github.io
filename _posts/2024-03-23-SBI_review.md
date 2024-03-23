@@ -48,6 +48,7 @@ author: Gnonymous
 * **Framework:**
 
 <center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/SBI_framwork.png">
+
 ~~~python
 # 算法 1: SBIs 生成伪代码
 # 输入: 大小为 (H, W, 3) 的基础图像 I，大小为 (81, 2) 的面部标记 L
@@ -90,36 +91,36 @@ ISB = Is ⊙ M + It ⊙ (1 − M)
 
   ~~~python
   def get_blend_mask(mask):
-      # 获取输入遮罩的形状
-      H, W = mask.shape
-      
-      # 随机生成新的遮罩大小
-      size_h = np.random.randint(192, 257)
-      size_w = np.random.randint(192, 257)
-      
-      # 将输入遮罩调整到新的大小
-      mask = cv2.resize(mask, (size_w, size_h))
-      
-      # 随机生成两个高斯滤波器的核大小
-      kernel_1 = random.randrange(5, 26, 2)
-      kernel_1 = (kernel_1, kernel_1)
-      kernel_2 = random.randrange(5, 26, 2)
-      kernel_2 = (kernel_2, kernel_2)
-      
-      # 对遮罩进行第一次高斯模糊
-      mask_blured = cv2.GaussianBlur(mask, kernel_1, 0)
-      mask_blured = mask_blured / (mask_blured.max())  # 归一化
-      mask_blured[mask_blured < 1] = 0  # 将小于1的像素值设为0
-      
-      # 对模糊后的遮罩再进行一次高斯模糊
-      mask_blured = cv2.GaussianBlur(mask_blured, kernel_2, np.random.randint(5, 46))
-      mask_blured = mask_blured / (mask_blured.max())  # 归一化
-      
-      # 调整遮罩大小为原始输入遮罩的大小
-      mask_blured = cv2.resize(mask_blured, (W, H))
-      
-      # 将遮罩转换为三维张量（加入了通道维度）
-      return mask_blured.reshape((mask_blured.shape + (1,)))
+        # 获取输入遮罩的形状
+        H, W = mask.shape
+        
+        # 随机生成新的遮罩大小
+        size_h = np.random.randint(192, 257)
+        size_w = np.random.randint(192, 257)
+        
+        # 将输入遮罩调整到新的大小
+        mask = cv2.resize(mask, (size_w, size_h))
+        
+        # 随机生成两个高斯滤波器的核大小
+        kernel_1 = random.randrange(5, 26, 2)
+        kernel_1 = (kernel_1, kernel_1)
+        kernel_2 = random.randrange(5, 26, 2)
+        kernel_2 = (kernel_2, kernel_2)
+        
+        # 对遮罩进行第一次高斯模糊
+        mask_blured = cv2.GaussianBlur(mask, kernel_1, 0)
+        mask_blured = mask_blured / (mask_blured.max())  # 归一化
+        mask_blured[mask_blured < 1] = 0  # 将小于1的像素值设为0
+        
+        # 对模糊后的遮罩再进行一次高斯模糊
+        mask_blured = cv2.GaussianBlur(mask_blured, kernel_2, np.random.randint(5, 46))
+        mask_blured = mask_blured / (mask_blured.max())  # 归一化
+        
+        # 调整遮罩大小为原始输入遮罩的大小
+        mask_blured = cv2.resize(mask_blured, (W, H))
+        
+        # 将遮罩转换为三维张量（加入了通道维度）
+        return mask_blured.reshape((mask_blured.shape + (1,)))
   ~~~
 
 * **Blending:**
