@@ -2,12 +2,39 @@ pre, code {
   font-family: $code-font;
 }
 
-code.highlighter-rouge {
-  font-size: 90%;
-  color: $oc-indigo-9;
-  background-color: $oc-gray-1;
-  padding: .1em .2em;
-  border-radius: 3px;
+.code.highlighter-rouge {
+  font-size: 90%; /* 设置代码块中代码的字体大小 */
+  background-color: #f5f5f5; /* 设置代码块的背景颜色为浅灰色 */
+  padding: .1em .2em; /* 设置代码块内边距 */
+  border-radius: 5px; /* 设置代码块的边框圆角半径为5像素 */
+  border: 1px solid #ccc; /* 设置代码块的边框为灰色实线 */
+  overflow-x: auto; /* 当代码块内容过长时显示横向滚动条 */
+}
+
+/* 函数名 */
+.code.highlighter-rouge .nf {
+  color: #795548; /* 深棕色 */
+}
+
+/* 变量名 */
+.code.highlighter-rouge .nv {
+  color: #2196F3; /* 蓝色 */
+}
+
+/* 关键字 */
+.code.highlighter-rouge .k {
+  color: #E91E63; /* 粉红色 */
+}
+
+/* 字符串 */
+.code.highlighter-rouge .s {
+  color: #4CAF50; /* 绿色 */
+}
+
+/* 注释 */
+.code.highlighter-rouge .c {
+  color: #9E9E9E; /* 灰色 */
+  font-style: italic; /* 设置为斜体 */
 }
 
 pre.highlight {
