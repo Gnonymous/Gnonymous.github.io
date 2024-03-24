@@ -9,4 +9,59 @@
 
 <url>
   <loc>https://gnonymous.github.io/</loc>
-  <lastmod>2024-03-24T10:49:29+00:00</las
+  <lastmod>2024-03-24T10:57:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gnonymous.github.io/about/</loc>
+  <lastmod>2024-03-24T10:57:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnonymous.github.io/archive/</loc>
+  <lastmod>2024-03-24T10:57:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnonymous.github.io/tags/</loc>
+  <lastmod>2024-03-24T10:57:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnonymous.github.io/SBI_review/</loc>
+  <lastmod>2024-03-24T10:57:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnonymous.github.io/Binary_search/</loc>
+  <lastmod>2024-03-24T10:57:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnonymous.github.io/water_mark/</loc>
+  <lastmod>2024-03-24T10:57:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnonymous.github.io/MDCL_review/</loc>
+  <lastmod>2024-03-24T10:57:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnonymous.github.io/%E7%9B%B8%E4%BC%BC%E5%BA%A6%E5%9C%A8AI%E9%A2%86%E5%9F%9F%E7%9A%84%E5%BA%94%E7%94%A8/</loc>
+  <lastmod>2024-03-24T10:57:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnonymous.github.io/GCD/</loc>
+  <lastmod>2024-03-24T10:57:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnonymous.github.io/%E8%BE%85%E5%8A%A9%E6%A0%88%E6%8E%92%E5%BA%8F/</loc>
+  <lastmod>2024-03-24T10:57:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
