@@ -9,7 +9,7 @@ author: Gnonymous
 
 <center><img src="../images/Lips_paper.png"></center>
 
->A. Haliassos, K. Vougioukas, S. Petridis和M. Pantic, 《Lips Don’t Lie: A Generalisable and Robust Approach to Face Forgery Detection》. arXiv, 2021年8月15日. 见于: 2024年3月23日. [在线]. 载于: http://arxiv.org/abs/2012.07657
+>A. Haliassos, K. Vougioukas, S. Petridis和M. Pantic, 《Lips Don’t Lie: A Generalisable and Robust Approach to Face Forgery Detection》. arXiv, 2021年8月15日. 见于: 2024年3月23日. [在线]. 载于: [http://arxiv.org/abs/2012.07657](http://arxiv.org/abs/2012.07657)
 
 #### Motivation:
 
