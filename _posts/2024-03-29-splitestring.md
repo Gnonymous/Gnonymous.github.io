@@ -7,6 +7,8 @@ comments: true
 author: Gnonymous
 ---
 
+#### 高级语言中有能直接按照特定字符串分割的函数，那么在C++中如何实现呢？
+
 思路是将string变为输入流string stream，后利用getline(输入流，存储变量，结束符（默认为空格）)，进行分割。
 
 ~~~c++
@@ -47,3 +49,4 @@ int main() {
 }
 ~~~
 
+to_lowercase
