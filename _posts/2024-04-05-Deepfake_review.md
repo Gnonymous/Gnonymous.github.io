@@ -26,16 +26,16 @@ author: Gnonymous
 
   判别器和生成器均使用**反向传播**来优化参数， 当**判别器**尚能分辨生成器输出与现实存在图像时， 对**生成器**的参数进行优化以提升生成图像质量；对 判别器的参数进行优化以提升判别器分辨准确率， 达到**纳什均衡**时模型优化至最佳。
   <center><img src="../images/Deepfake_gan.png">
-
   
-
+  
 * **扩 散 模 型（diffusion model）：**
 
   扩散模型的骨干网络一般采用输入和输出相同 尺寸的 U-Net 网络。在采样过程中如果在中间插入 要更改的图像可以生成相同风格的图像，以达到换 脸的效果。
 
 #### 检测——输入维度
 
-<center><img src="../images/Deepfake_shuruweidu.png">
+<center><img src="../images/Deepfake_shuruweidu.png"></center>
+
 
 * 图像或视频关键帧输入：最常用的方式，抽取视频帧来进行训练。
 * 视频连续帧输入：这里更进一步捕捉视频帧间不一致的信息，对于视频判假十分有效。
@@ -43,7 +43,8 @@ author: Gnonymous
 
 #### 检测——检测特征
 
-<center><img src="../images/Deepfake_jiancetezheng.png">
+<center><img src="../images/Deepfake_jiancetezheng.png"></center>
+
 
 * **基于频率域的方法:**
 
