@@ -1,3 +1,12 @@
+---
+layout: post
+title: "素数筛"
+date:   2024-03-30
+tags: [algorithm]
+comments: true
+author: Gnonymous
+---
+
 ~~~c++
 #include <iostream>
 #include <vector>
