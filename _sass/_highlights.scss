@@ -8,7 +8,7 @@ pre, code {
   padding: .1em .2em; /* 设置代码块内边距 */
   border-radius: 5px; /* 设置代码块的边框圆角半径为5像素 */
   border: 1px solid #ccc; /* 设置代码块的边框为灰色实线 */
-  overflow-x: visible; /* 当代码块内容过长时显示横向滚动条 */
+  overflow-x: auto; /* 当代码块内容过长时显示横向滚动条 */
 }
 
 /* 函数名 */
