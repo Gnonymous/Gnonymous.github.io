@@ -28,6 +28,7 @@ author: Gnonymous
   <center><img src="../images/Deepfake_gan.png">
   
   
+  
 * **扩 散 模 型（diffusion model）：**
 
   扩散模型的骨干网络一般采用输入和输出相同 尺寸的 U-Net 网络。在采样过程中如果在中间插入 要更改的图像可以生成相同风格的图像，以达到换 脸的效果。
