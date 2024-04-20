@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "面向自动驾驶的YOLO综述"
-date:   2024-04-020
+date:   2024-04-20
 tags: [paper]
 comments: true
 author: Gnonymous
