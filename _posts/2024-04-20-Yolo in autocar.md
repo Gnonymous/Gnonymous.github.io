@@ -7,7 +7,8 @@ comments: true
 author: Gnonymous
 ---
 
-<center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/image-20240420174819409.png"/>
+<center><img src="https://raw.githubusercontent.com/Gnonymous/Gnonymous.github.io/master/images/image-20240420174819409.png"/></center>
+
 
 ## 摘要
 本文深入探讨了YOLO系列目标检测算法及其在自动驾驶领域的发展方向。通过回顾YOLO算法（YOLOv1至YOLOv8）的研究进展和主要成果，分析了其在自动驾驶领域中车辆、车道线、行人、交通标志检测任务中的应用，并对其未来可能的改进思路与研究趋势进行了展望。
